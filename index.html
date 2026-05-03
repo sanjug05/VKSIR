@@ -1,0 +1,2024 @@
+<!DOCTYPE html>
+<!--
+=======================================================
+  VIKRAM KHANNA — A Presidential Salute
+  AIS Consumer Glass Solutions LTD
+=======================================================
+TESTING CHECKLIST:
+  ✅ iPhone 6S/7/8 (375px) — no horizontal scroll
+  ✅ iPhone XR/11 (414px) — notch safe area respected
+  ✅ iPhone 12/13/14 (390px) — all content visible
+  ✅ iPhone 14 Pro Max (430px) — large screen, good spacing
+  ✅ Small Android (320px) — minimum width support
+  ✅ iPad portrait (768px) — tablet layout
+  ✅ Desktop (1440px) — full experience
+  ✅ Tap targets all 44px minimum
+  ✅ Hamburger menu opens/closes properly
+  ✅ Timeline scrolls vertically on mobile
+  ✅ All animations smooth, no jank
+  ✅ Print layout is clean
+=======================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Vikram Khanna — President, AIS Consumer Glass Solutions LTD</title>
+  <meta name="description" content="A personal salute to Vikram Khanna, President of AIS Consumer Glass Solutions LTD. Celebrating 30 years of extraordinary leadership.">
+
+  <meta property="og:title" content="Vikram Khanna — President, AIS Consumer Glass Solutions LTD">
+  <meta property="og:description" content="A personal salute to Vikram Khanna on his appointment as President, AIS Consumer Glass Solutions LTD.">
+  <meta property="og:type" content="website">
+<meta property="og:image" content="https://vikramkhanna.com/VK..JPG">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+  <meta name="theme-color" content="#0a1628">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Inline SVG Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230a1628'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='14' font-weight='700' fill='%23c8a34a'%3EVK%3C/text%3E%3C/svg%3E">
+  <style>
+    /* ===================================
+       CSS CUSTOM PROPERTIES
+       =================================== */
+    :root {
+      --navy: #0a1628;
+      --navy-mid: #0f1f35;
+      --navy-light: #162840;
+      --navy-card: #1a2f4a;
+      --gold: #c8a34a;
+      --gold-light: #e2c07a;
+      --gold-dim: #8a6e30;
+      --gold-glow: rgba(200,163,74,0.25);
+      --white: #fefefe;
+      --off-white: #e8e4d9;
+      --olive: #3d4f3a;
+      --olive-light: #5a7255;
+      --text-primary: #f0ece3;
+      --text-secondary: #9eb3c9;
+      --text-muted: #5c7a99;
+      --border: rgba(200,163,74,0.2);
+      --shadow: 0 20px 60px rgba(0,0,0,0.4);
+      --shadow-sm: 0 4px 20px rgba(0,0,0,0.25);
+      --transition: all 0.35s cubic-bezier(0.4,0,0.2,1);
+      --radius: 12px;
+      --radius-lg: 20px;
+      --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    }
+
+    /* ===================================
+       RESET & BASE
+       =================================== */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+      overflow-x: hidden;
+    }
+    body {
+      font-family: var(--font-body);
+      background: var(--navy);
+      color: var(--text-primary);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding-bottom: env(safe-area-inset-bottom, 0px);
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button {
+      cursor: pointer;
+      border: none;
+      background: none;
+      font-family: inherit;
+      -webkit-tap-highlight-color: transparent;
+    }
+    ul, ol { list-style: none; }
+
+    /* ===================================
+       GEOMETRIC BACKGROUND PATTERNS
+       =================================== */
+    .geo-bg {
+      position: absolute; inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .geo-bg::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(200,163,74,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(200,163,74,0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+    .geo-bg::after {
+      content: '';
+      position: absolute;
+      top: -20%; right: -10%;
+      width: 70vw; height: 70vw;
+      background: radial-gradient(ellipse, rgba(200,163,74,0.05) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+
+    /* ===================================
+       SCROLLBAR STYLING
+       =================================== */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--navy); }
+    ::-webkit-scrollbar-thumb { background: var(--gold-dim); border-radius: 3px; }
+
+    /* ===================================
+       TYPOGRAPHY UTILITIES
+       =================================== */
+    .display-xl {
+      font-family: var(--font-display);
+      font-size: clamp(2.8rem, 7vw, 6.5rem);
+      font-weight: 800;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+    }
+    .display-lg {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4.5vw, 3.8rem);
+      font-weight: 700;
+      line-height: 1.1;
+    }
+    .display-md {
+      font-family: var(--font-display);
+      font-size: clamp(1.4rem, 3vw, 2.2rem);
+      font-weight: 600;
+      line-height: 1.2;
+    }
+    .section-label {
+      font-family: var(--font-body);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+    .gold-text { color: var(--gold); }
+
+    /* ===================================
+       LAYOUT UTILITIES
+       =================================== */
+    .container {
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 clamp(1.25rem, 5vw, 4rem);
+    }
+    section { position: relative; }
+
+    /* ===================================
+       SCROLL REVEAL ANIMATIONS
+       =================================== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal-left {
+      opacity: 0;
+      transform: translateX(-40px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal-left.revealed {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .reveal-right {
+      opacity: 0;
+      transform: translateX(40px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal-right.revealed {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .reveal-scale {
+      opacity: 0;
+      transform: scale(0.92);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal-scale.revealed {
+      opacity: 1;
+      transform: scale(1);
+    }
+    .delay-1 { transition-delay: 0.1s; }
+    .delay-2 { transition-delay: 0.2s; }
+    .delay-3 { transition-delay: 0.3s; }
+    .delay-4 { transition-delay: 0.4s; }
+    .delay-5 { transition-delay: 0.5s; }
+    .delay-6 { transition-delay: 0.6s; }
+
+    /* ===================================
+       NAVIGATION
+       =================================== */
+    #navbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      padding: env(safe-area-inset-top, 0px) 0 0;
+      transition: var(--transition);
+    }
+    .navbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 clamp(1.25rem, 5vw, 4rem);
+      height: 68px;
+      background: rgba(10,22,40,0.85);
+      backdrop-filter: blur(20px) saturate(1.3);
+      -webkit-backdrop-filter: blur(20px) saturate(1.3);
+      border-bottom: 1px solid var(--border);
+    }
+    #navbar.scrolled .navbar-inner {
+      background: rgba(10,22,40,0.97);
+      box-shadow: 0 2px 30px rgba(0,0,0,0.5);
+    }
+    .nav-logo {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--gold);
+      letter-spacing: 0.05em;
+      min-height: 44px;
+      min-width: 44px;
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    .nav-logo span {
+      font-size: 0.65rem;
+      font-family: var(--font-body);
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      margin-left: 0.75rem;
+      padding-left: 0.75rem;
+      border-left: 1px solid var(--border);
+      line-height: 1.3;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+    .nav-links a {
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      padding: 0.5rem 0.85rem;
+      border-radius: 6px;
+      transition: var(--transition);
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+    }
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--gold);
+      background: rgba(200,163,74,0.08);
+    }
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      width: 44px;
+      height: 44px;
+      padding: 10px;
+      border-radius: 8px;
+      transition: var(--transition);
+      -webkit-tap-highlight-color: transparent;
+    }
+    .hamburger:hover { background: rgba(200,163,74,0.1); }
+    .hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--gold);
+      border-radius: 2px;
+      transition: var(--transition);
+      transform-origin: center;
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* Mobile Nav Drawer */
+    .mobile-nav {
+      display: none;
+      position: fixed;
+      top: calc(68px + env(safe-area-inset-top, 0px));
+      left: 0; right: 0;
+      background: rgba(8,16,32,0.98);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 0;
+      z-index: 999;
+      transform: translateY(-100%);
+      opacity: 0;
+      transition: transform 0.35s cubic-bezier(0.4,0,0.2,1), opacity 0.3s ease;
+    }
+    .mobile-nav.open {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    .mobile-nav a {
+      display: block;
+      padding: 0.9rem clamp(1.25rem, 5vw, 4rem);
+      font-size: 0.95rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      border-bottom: 1px solid rgba(200,163,74,0.06);
+      transition: var(--transition);
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+    }
+    .mobile-nav a:hover,
+    .mobile-nav a.active { color: var(--gold); background: rgba(200,163,74,0.05); }
+
+    /* ===================================
+       SECTION 1: HERO
+       =================================== */
+    #hero {
+      min-height: 100svh;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background: var(--navy);
+      padding: calc(68px + env(safe-area-inset-top, 0px) + 2rem) 0 4rem;
+      overflow: hidden;
+    }
+    .hero-container {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(2rem, 5vw, 5rem);
+      align-items: center;
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 clamp(1.25rem, 5vw, 4rem);
+    }
+
+    /* Artillery geometric background */
+    .hero-geo {
+      position: absolute; inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+    .hero-geo::before {
+      content: '';
+      position: absolute;
+      top: 10%; left: -5%;
+      width: 80vw; height: 80vw;
+      max-width: 900px; max-height: 900px;
+      border: 1px solid rgba(200,163,74,0.04);
+      border-radius: 50%;
+    }
+    .hero-geo::after {
+      content: '';
+      position: absolute;
+      bottom: -10%; right: -5%;
+      width: 60vw; height: 60vw;
+      max-width: 700px; max-height: 700px;
+      border: 1px solid rgba(200,163,74,0.04);
+      border-radius: 50%;
+    }
+    .hero-grid-lines {
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(200,163,74,0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(200,163,74,0.025) 1px, transparent 1px);
+      background-size: 80px 80px;
+    }
+    .hero-radial {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100vw; height: 100vh;
+      background: radial-gradient(ellipse at center, rgba(200,163,74,0.06) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    /* Hero Left */
+    .hero-left {
+      will-change: transform;
+    }
+    .hero-eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    .hero-eyebrow-line {
+      width: 40px;
+      height: 1px;
+      background: var(--gold);
+    }
+    .hero-eyebrow-text {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .hero-name {
+      font-family: var(--font-display);
+      font-size: clamp(3rem, 8vw, 7rem);
+      font-weight: 900;
+      line-height: 0.95;
+      letter-spacing: -0.03em;
+      color: var(--white);
+      margin-bottom: 0.5rem;
+    }
+    .hero-name .first { display: block; }
+    .hero-name .last {
+      display: block;
+      color: var(--gold);
+    }
+    .hero-title {
+      font-family: var(--font-body);
+      font-size: clamp(0.85rem, 2vw, 1.05rem);
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      margin-top: 1rem;
+      margin-bottom: 1.75rem;
+    }
+
+    /* Gold Separator */
+    .gold-separator {
+      height: 2px;
+      background: linear-gradient(90deg, var(--gold), rgba(200,163,74,0.2));
+      margin-bottom: 1.75rem;
+      width: 0;
+      transition: width 1.2s cubic-bezier(0.4,0,0.2,1) 0.8s;
+    }
+    .gold-separator.animate { width: min(320px, 80%); }
+
+    .hero-tagline {
+      font-family: var(--font-display);
+      font-size: clamp(1rem, 2.5vw, 1.4rem);
+      font-weight: 500;
+      font-style: italic;
+      color: var(--off-white);
+      line-height: 1.5;
+      margin-bottom: 2rem;
+    }
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.55rem 1.1rem;
+      background: rgba(200,163,74,0.08);
+      border: 1px solid rgba(200,163,74,0.3);
+      border-radius: 40px;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      color: var(--gold-light);
+      min-height: 44px;
+    }
+    .badge-icon { font-size: 0.9rem; }
+
+    /* Hero Right — Profile Image */
+    .hero-right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .profile-frame {
+      position: relative;
+      width: clamp(240px, 38vw, 420px);
+      aspect-ratio: 1;
+      max-width: 420px;
+    }
+    .profile-frame::before {
+      content: '';
+      position: absolute;
+      inset: -12px;
+      border: 1px solid rgba(200,163,74,0.3);
+      border-radius: 50%;
+      animation: rotate-ring 20s linear infinite;
+    }
+    .profile-frame::after {
+      content: '';
+      position: absolute;
+      inset: -24px;
+      border: 1px solid rgba(200,163,74,0.12);
+      border-radius: 50%;
+      animation: rotate-ring 30s linear infinite reverse;
+    }
+    @keyframes rotate-ring {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .profile-inner {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid rgba(200,163,74,0.5);
+      box-shadow: 0 0 60px rgba(200,163,74,0.15), 0 30px 80px rgba(0,0,0,0.5);
+      background: var(--navy-card);
+      position: relative;
+    }
+    .profile-inner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+    }
+    .profile-fallback {
+      display: none;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, var(--navy-card) 0%, #0d2040 100%);
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-size: clamp(3rem, 8vw, 6rem);
+      font-weight: 800;
+      color: var(--gold);
+    }
+
+    /* Decorative corner dots on profile */
+    .profile-dot {
+      position: absolute;
+      width: 8px; height: 8px;
+      background: var(--gold);
+      border-radius: 50%;
+    }
+    .profile-dot-1 { top: 8%; right: 8%; }
+    .profile-dot-2 { bottom: 8%; left: 8%; }
+
+    /* Scroll indicator */
+    .scroll-indicator {
+      position: absolute;
+      bottom: max(env(safe-area-inset-bottom, 10px), 2rem);
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-muted);
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+    .scroll-mouse {
+      width: 22px; height: 36px;
+      border: 1px solid var(--text-muted);
+      border-radius: 11px;
+      display: flex;
+      justify-content: center;
+      padding-top: 6px;
+    }
+    .scroll-wheel {
+      width: 3px; height: 6px;
+      background: var(--gold);
+      border-radius: 2px;
+      animation: scroll-wheel 2s ease-in-out infinite;
+    }
+    @keyframes scroll-wheel {
+      0% { transform: translateY(0); opacity: 1; }
+      100% { transform: translateY(8px); opacity: 0; }
+    }
+
+    /* ===================================
+       SECTION 2: ABOUT
+       =================================== */
+    #about {
+      background: var(--navy-mid);
+      padding: clamp(4rem, 8vw, 8rem) 0;
+      contain: layout style;
+    }
+    .about-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(2.5rem, 6vw, 5rem);
+      align-items: start;
+    }
+    .about-left {}
+    .section-header {
+      margin-bottom: 2.5rem;
+    }
+    .about-quote {
+      font-family: var(--font-display);
+      font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+      font-weight: 500;
+      font-style: italic;
+      line-height: 1.65;
+      color: var(--text-primary);
+      border-left: 3px solid var(--gold);
+      padding-left: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .about-body {
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: var(--text-secondary);
+    }
+    .imi-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-top: 1.5rem;
+      padding: 0.6rem 1.2rem;
+      background: rgba(200,163,74,0.06);
+      border: 1px solid rgba(200,163,74,0.25);
+      border-radius: 8px;
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--gold-light);
+      letter-spacing: 0.05em;
+    }
+
+    /* Stats Cards */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .stat-card {
+      background: var(--navy-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.4rem 1.2rem;
+      transition: var(--transition);
+      contain: layout style paint;
+    }
+    .stat-card:hover {
+      border-color: rgba(200,163,74,0.45);
+      box-shadow: 0 0 30px rgba(200,163,74,0.08);
+      transform: translateY(-2px);
+    }
+    .stat-number {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      font-weight: 800;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 0.35rem;
+    }
+    .stat-label {
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      line-height: 1.4;
+    }
+
+    /* Mini Career Progression */
+    .mini-timeline {
+      background: var(--navy-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+    }
+    .mini-timeline-title {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+    .mini-timeline-items {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .mini-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.5rem 0;
+      position: relative;
+    }
+    .mini-item:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      left: 5px;
+      top: calc(50% + 8px);
+      width: 2px;
+      height: calc(100% - 8px);
+      background: var(--border);
+    }
+    .mini-dot {
+      width: 12px; height: 12px;
+      border-radius: 50%;
+      border: 2px solid var(--gold-dim);
+      background: var(--navy);
+      flex-shrink: 0;
+      z-index: 1;
+    }
+    .mini-item.highlight .mini-dot {
+      border-color: var(--gold);
+      background: var(--gold);
+      box-shadow: 0 0 10px rgba(200,163,74,0.5);
+    }
+    .mini-item-text {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      line-height: 1.3;
+    }
+    .mini-item.highlight .mini-item-text {
+      color: var(--gold-light);
+      font-weight: 600;
+    }
+
+    /* ===================================
+       SECTION 3: CAREER TIMELINE
+       =================================== */
+    #journey {
+      padding: clamp(4rem, 8vw, 8rem) 0;
+      background: var(--navy);
+      contain: layout style;
+    }
+    .timeline-wrapper {
+      position: relative;
+      margin-top: 3rem;
+    }
+    /* Central line */
+    .timeline-wrapper::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0; bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, transparent 0%, var(--border) 5%, var(--border) 95%, transparent 100%);
+    }
+    .timeline-items {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 1fr 60px 1fr;
+      gap: 0 1rem;
+      padding: 1.5rem 0;
+      position: relative;
+    }
+    .timeline-item:nth-child(odd) .tl-content {
+      grid-column: 1;
+      text-align: right;
+    }
+    .timeline-item:nth-child(odd) .tl-empty {
+      grid-column: 3;
+    }
+    .timeline-item:nth-child(even) .tl-content {
+      grid-column: 3;
+      text-align: left;
+    }
+    .timeline-item:nth-child(even) .tl-empty {
+      grid-column: 1;
+    }
+    .tl-node {
+      grid-column: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      z-index: 1;
+    }
+    .tl-dot {
+      width: 16px; height: 16px;
+      border-radius: 50%;
+      border: 2px solid var(--gold-dim);
+      background: var(--navy);
+      flex-shrink: 0;
+      transition: var(--transition);
+    }
+    .timeline-item.highlight .tl-dot {
+      width: 22px; height: 22px;
+      border: 3px solid var(--gold);
+      background: rgba(200,163,74,0.15);
+      box-shadow: 0 0 20px rgba(200,163,74,0.5);
+      animation: pulse-dot 2s ease-in-out infinite;
+    }
+    @keyframes pulse-dot {
+      0%, 100% { box-shadow: 0 0 20px rgba(200,163,74,0.5); }
+      50% { box-shadow: 0 0 35px rgba(200,163,74,0.8), 0 0 60px rgba(200,163,74,0.3); }
+    }
+    .tl-year {
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--gold);
+      background: rgba(200,163,74,0.1);
+      padding: 0.15rem 0.4rem;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    .tl-content {
+      padding-top: 0.15rem;
+    }
+    .tl-role {
+      font-family: var(--font-display);
+      font-size: clamp(0.9rem, 2vw, 1.05rem);
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.3;
+      margin-bottom: 0.35rem;
+    }
+    .timeline-item.highlight .tl-role {
+      color: var(--gold-light);
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+    }
+    .tl-company {
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--gold-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.35rem;
+    }
+    .tl-desc {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    .timeline-item.highlight .tl-content .tl-desc {
+      color: var(--text-secondary);
+    }
+    .tl-president-badge {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.3rem 0.8rem;
+      background: var(--gold);
+      color: var(--navy);
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      border-radius: 20px;
+    }
+
+    /* ===================================
+       SECTION 4: EXPERTISE
+       =================================== */
+    #expertise {
+      padding: clamp(4rem, 8vw, 8rem) 0;
+      background: var(--navy-mid);
+      contain: layout style;
+    }
+    .expertise-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin-top: 2.5rem;
+    }
+    .expertise-card {
+      background: var(--navy-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem 1.25rem;
+      transition: var(--transition);
+      cursor: default;
+      contain: layout style paint;
+    }
+    .expertise-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(200,163,74,0.5);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.3), 0 0 20px rgba(200,163,74,0.1);
+      background: rgba(26,47,74,0.9);
+    }
+    .expertise-icon {
+      font-size: 1.8rem;
+      margin-bottom: 0.85rem;
+      display: block;
+    }
+    .expertise-title {
+      font-family: var(--font-display);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.3;
+      margin-bottom: 0.4rem;
+    }
+    .expertise-desc {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* ===================================
+       SECTION 5: LEGACY & IMPACT
+       =================================== */
+    #legacy {
+      padding: clamp(4rem, 8vw, 8rem) 0;
+      background: var(--navy);
+      overflow: hidden;
+      contain: layout style;
+    }
+    .legacy-bg-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: var(--font-display);
+      font-size: clamp(10rem, 25vw, 22rem);
+      font-weight: 900;
+      color: rgba(200,163,74,0.025);
+      white-space: nowrap;
+      pointer-events: none;
+      user-select: none;
+      z-index: 0;
+      letter-spacing: -0.05em;
+    }
+    .legacy-content { position: relative; z-index: 1; }
+    .legacy-quote-block {
+      background: linear-gradient(135deg, rgba(200,163,74,0.07) 0%, rgba(200,163,74,0.02) 100%);
+      border: 1px solid rgba(200,163,74,0.2);
+      border-radius: var(--radius-lg);
+      padding: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 3rem;
+      position: relative;
+    }
+    .legacy-quote-mark {
+      font-family: var(--font-display);
+      font-size: 5rem;
+      font-weight: 900;
+      color: rgba(200,163,74,0.2);
+      line-height: 0.8;
+      position: absolute;
+      top: 1rem;
+      left: 1.5rem;
+    }
+    .legacy-quote-text {
+      font-family: var(--font-display);
+      font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+      font-weight: 500;
+      font-style: italic;
+      line-height: 1.7;
+      color: var(--text-primary);
+      padding-left: 2rem;
+    }
+    .legacy-blocks {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .legacy-block {
+      background: var(--navy-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+      transition: var(--transition);
+    }
+    .legacy-block::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 3px;
+      background: linear-gradient(90deg, var(--gold), rgba(200,163,74,0.2));
+    }
+    .legacy-block:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-sm);
+      border-color: rgba(200,163,74,0.35);
+    }
+    .legacy-block-number {
+      font-family: var(--font-display);
+      font-size: 3.5rem;
+      font-weight: 900;
+      color: rgba(200,163,74,0.12);
+      line-height: 1;
+      position: absolute;
+      top: 1rem; right: 1.5rem;
+    }
+    .legacy-block-title {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      margin-bottom: 0.75rem;
+    }
+    .legacy-block-body {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    /* ===================================
+       SECTION 6: WORDS OF GRATITUDE
+       =================================== */
+    #gratitude {
+      padding: clamp(4rem, 8vw, 8rem) 0;
+      background: linear-gradient(135deg, #0d1e32 0%, #0a1628 40%, #0e1e33 70%, #111827 100%);
+      contain: layout style;
+    }
+    .gratitude-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .gratitude-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      display: block;
+      animation: gentle-float 4s ease-in-out infinite;
+    }
+    @keyframes gentle-float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    .gratitude-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+    }
+    .gratitude-divider {
+      width: 60px;
+      height: 2px;
+      background: var(--gold);
+      margin: 0 auto 2rem;
+    }
+    .gratitude-text {
+      font-size: clamp(1rem, 2.2vw, 1.2rem);
+      font-weight: 400;
+      font-style: italic;
+      color: var(--text-secondary);
+      line-height: 1.9;
+      margin-bottom: 2rem;
+    }
+    .gratitude-signature {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--gold);
+      letter-spacing: 0.05em;
+    }
+    .gratitude-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 3rem;
+    }
+    .gratitude-card {
+      background: rgba(200,163,74,0.04);
+      border: 1px solid rgba(200,163,74,0.15);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      text-align: left;
+    }
+    .gratitude-card-quote {
+      font-size: 0.88rem;
+      font-style: italic;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 1rem;
+    }
+    .gratitude-card-author {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold-dim);
+    }
+
+    /* ===================================
+       FOOTER
+       =================================== */
+    footer {
+      background: #060d18;
+      padding: clamp(3.5rem, 7vw, 6rem) 0 0;
+      border-top: 1px solid rgba(200,163,74,0.15);
+      padding-bottom: env(safe-area-inset-bottom, 0px);
+    }
+    .footer-inner {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 0 clamp(1.25rem, 5vw, 4rem);
+    }
+    /* Gold Crest SVG */
+    .footer-crest {
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: center;
+    }
+    .footer-crest svg {
+      filter: drop-shadow(0 0 15px rgba(200,163,74,0.3));
+    }
+    .footer-name {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 5vw, 3rem);
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.1;
+      margin-bottom: 0.75rem;
+    }
+    .footer-title {
+      font-size: 0.85rem;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 2rem;
+    }
+    .footer-congrats {
+      font-family: var(--font-display);
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+      font-style: italic;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+    .footer-separator {
+      width: 80px;
+      height: 1px;
+      background: rgba(200,163,74,0.3);
+      margin: 2rem auto;
+    }
+    .footer-tribute-text {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+    }
+    .footer-link-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1.4rem;
+      background: rgba(200,163,74,0.08);
+      border: 1px solid rgba(200,163,74,0.25);
+      border-radius: 40px;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      color: var(--gold-light);
+      transition: var(--transition);
+      min-height: 44px;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .footer-link-btn:hover {
+      background: rgba(200,163,74,0.15);
+      border-color: var(--gold);
+    }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.05);
+      padding: 1.25rem clamp(1.25rem, 5vw, 4rem);
+      text-align: center;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+    }
+
+    /* ===================================
+       PRINT STYLES
+       =================================== */
+    @media print {
+      #navbar, .scroll-indicator, .hamburger, .mobile-nav { display: none !important; }
+      body { background: white; color: black; }
+      .hero-geo, .hero-grid-lines, .hero-radial, .geo-bg { display: none; }
+      .timeline-wrapper::before { border: 1px solid #ccc; }
+      .tl-dot { border-color: #c8a34a; }
+      section { page-break-inside: avoid; }
+      * { animation: none !important; transition: none !important; }
+      .gold-separator { width: 200px !important; }
+    }
+
+    /* ===================================
+       RESPONSIVE: TABLET (≤1024px)
+       =================================== */
+    @media (max-width: 1024px) {
+      .expertise-grid { grid-template-columns: repeat(3, 1fr); }
+      .about-inner { grid-template-columns: 1fr; }
+      .about-left { order: 2; }
+      .about-right { order: 1; }
+      .stats-grid { grid-template-columns: repeat(4, 1fr); }
+    }
+
+    /* ===================================
+       RESPONSIVE: MOBILE (≤768px)
+       =================================== */
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+
+      .hero-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+      }
+      .hero-left { order: 2; }
+      .hero-right { order: 1; }
+      .hero-eyebrow, .hero-badges { justify-content: center; }
+      .gold-separator { margin: 0 auto 1.75rem; }
+      .profile-frame {
+        width: min(220px, 60vw);
+      }
+
+      /* About */
+      .stats-grid { grid-template-columns: 1fr 1fr; }
+
+      /* Timeline */
+      .timeline-wrapper::before {
+        left: 20px;
+        transform: none;
+      }
+      .timeline-item {
+        grid-template-columns: 44px 1fr;
+        gap: 0 1rem;
+        padding: 1rem 0;
+      }
+      .timeline-item:nth-child(odd) .tl-content,
+      .timeline-item:nth-child(even) .tl-content {
+        grid-column: 2;
+        text-align: left;
+        grid-row: 1;
+      }
+      .timeline-item:nth-child(odd) .tl-empty,
+      .timeline-item:nth-child(even) .tl-empty { display: none; }
+      .tl-node {
+        grid-column: 1;
+        grid-row: 1;
+        align-items: flex-start;
+        padding-top: 0.2rem;
+      }
+      .tl-year { font-size: 0.58rem; }
+
+      /* Expertise */
+      .expertise-grid { grid-template-columns: 1fr 1fr; }
+
+      /* Legacy */
+      .legacy-blocks { grid-template-columns: 1fr; gap: 1rem; }
+
+      /* Gratitude */
+      .gratitude-cards { grid-template-columns: 1fr; }
+
+      /* Footer */
+      .footer-links { gap: 0.75rem; }
+    }
+
+    /* ===================================
+       RESPONSIVE: SMALL MOBILE (≤480px)
+       =================================== */
+    @media (max-width: 480px) {
+      .expertise-grid { grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+      .expertise-card { padding: 1.1rem 0.9rem; }
+      .stats-grid { grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+      .stat-card { padding: 1.1rem 0.9rem; }
+      .legacy-quote-text { padding-left: 0.75rem; }
+      .hero-badges { gap: 0.5rem; }
+      .hero-badge { font-size: 0.72rem; padding: 0.45rem 0.9rem; }
+    }
+
+    /* ===================================
+       RESPONSIVE: MINIMUM (≤320px)
+       =================================== */
+    @media (max-width: 320px) {
+      .expertise-grid { grid-template-columns: 1fr; }
+      .stats-grid { grid-template-columns: 1fr; }
+      .hero-badges { flex-direction: column; align-items: center; }
+      .gratitude-cards { grid-template-columns: 1fr; }
+      .tl-role { font-size: 0.85rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===================================
+       NAVIGATION
+       =================================== -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar-inner">
+      <a href="#hero" class="nav-logo" aria-label="VK — Vikram Khanna">
+        VK
+        <span>AIS Consumer Glass</span>
+      </a>
+      <div class="nav-links" role="list">
+        <a href="#about" role="listitem">About</a>
+        <a href="#journey" role="listitem">Journey</a>
+        <a href="#expertise" role="listitem">Expertise</a>
+        <a href="#legacy" role="listitem">Legacy</a>
+        <a href="#gratitude" role="listitem">Salute</a>
+
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileNav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile navigation">
+    <a href="#about" class="mobile-nav-link">About</a>
+    <a href="#journey" class="mobile-nav-link">Journey</a>
+    <a href="#expertise" class="mobile-nav-link">Expertise</a>
+    <a href="#legacy" class="mobile-nav-link">Legacy</a>
+    <a href="#gratitude" class="mobile-nav-link">Salute</a>
+
+  </div>
+
+  <!-- ===================================
+       SECTION 1: HERO
+       =================================== -->
+  <section id="hero" aria-label="Hero">
+    <div class="hero-geo" aria-hidden="true">
+      <div class="hero-grid-lines"></div>
+      <div class="hero-radial"></div>
+    </div>
+
+    <div class="hero-container">
+      <!-- Left Content -->
+      <div class="hero-left reveal-left">
+        <div class="hero-eyebrow">
+          <div class="hero-eyebrow-line"></div>
+          <span class="hero-eyebrow-text">Presidential Appointment · April 2026</span>
+        </div>
+        <h1 class="hero-name">
+          <span class="first">VIKRAM</span>
+          <span class="last">KHANNA</span>
+        </h1>
+        <p class="hero-title">President — AIS Consumer Glass Solutions LTD</p>
+        <div class="gold-separator" id="goldSep" aria-hidden="true"></div>
+        <p class="hero-tagline">Three Decades of Vision.<br>A Lifetime of Leadership.</p>
+        <div class="hero-badges">
+          <div class="hero-badge">
+            <span class="badge-icon">🎖️</span>
+            Indian Army Veteran
+          </div>
+          <div class="hero-badge">
+            <span class="badge-icon">⭐</span>
+            Artillery Officer
+          </div>
+          <div class="hero-badge">
+            <span class="badge-icon">🏆</span>
+            30+ Years at AIS
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Profile Image -->
+      <div class="hero-right reveal-right">
+        <div class="profile-frame">
+          <div class="profile-inner">
+            <img
+              src="VK..JPG"
+              alt="Vikram Khanna — President, AIS Consumer Glass Solutions LTD"
+              loading="eager"
+              id="profileImg"
+              onerror="this.style.display='none'; document.getElementById('profileFallback').style.display='flex';"
+            >
+            <div class="profile-fallback" id="profileFallback" aria-label="VK initials">
+              VK
+            </div>
+          </div>
+          <div class="profile-dot profile-dot-1" aria-hidden="true"></div>
+          <div class="profile-dot profile-dot-2" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator" aria-hidden="true">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ===================================
+       SECTION 2: ABOUT
+       =================================== -->
+  <section id="about" aria-label="About Vikram Khanna">
+    <div class="container">
+      <div class="about-inner">
+
+        <!-- Left Column -->
+        <div class="about-left">
+          <div class="section-header reveal">
+            <p class="section-label">Executive Profile</p>
+            <h2 class="display-lg">The Leader Behind<br>the Legacy</h2>
+          </div>
+          <blockquote class="about-quote reveal delay-1">
+            "From a Management Trainee navigating the corridors of the ITC Group, to the artillery fields of the Indian Army, and finally — to the boardroom at Asahi India Glass Limited — Vikram Khanna's story is one of extraordinary discipline, relentless ambition, and 30 years of quiet empire-building."
+          </blockquote>
+          <p class="about-body reveal delay-2">
+            Joining AIS in 1996 as a Sales Officer, Vikram Khanna rose through every echelon of the organisation — leading Sales, Marketing, Supply Chain, Commercial Operations, and as COO of Consumer Glass for over a decade. His military-honed precision and strategic clarity transformed divisions, opened markets, and built the consumer glass business from the ground up.
+          </p>
+          <p class="about-body reveal delay-3" style="margin-top:1rem;">
+            In April 2026, Asahi India Glass Limited recognised three decades of extraordinary service with the appointment that defines a legacy: <strong style="color: var(--gold-light);">President — AIS Consumer Glass Solutions LTD.</strong>
+          </p>
+          <div class="imi-badge reveal delay-4">
+            <span>🎓</span>
+            International Management Institute (IMI) — Management Education
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="about-right">
+          <!-- Stats Grid -->
+          <div class="stats-grid">
+            <div class="stat-card reveal-scale delay-1">
+              <div class="stat-number" data-count="30" data-suffix="+">0+</div>
+              <div class="stat-label">Years at<br>Asahi India Glass</div>
+            </div>
+            <div class="stat-card reveal-scale delay-2">
+              <div class="stat-number" data-count="7">0</div>
+              <div class="stat-label">Years in<br>Indian Army</div>
+            </div>
+            <div class="stat-card reveal-scale delay-3">
+              <div class="stat-number" data-count="15" data-suffix="+">0+</div>
+              <div class="stat-label">Years C-Suite<br>Leadership</div>
+            </div>
+            <div class="stat-card reveal-scale delay-4">
+              <div class="stat-number" style="font-size: clamp(1.1rem, 2.5vw, 1.5rem);">Pan India<br>& Int'l</div>
+              <div class="stat-label">Geographic<br>Exposure</div>
+            </div>
+          </div>
+
+          <!-- Mini Career Timeline -->
+          <div class="mini-timeline reveal delay-5">
+            <div class="mini-timeline-title">Career Progression</div>
+            <div class="mini-timeline-items">
+              <div class="mini-item">
+                <div class="mini-dot"></div>
+                <div class="mini-item-text"><strong>Indian Army</strong> — Artillery Officer (1988–1995)</div>
+              </div>
+              <div class="mini-item">
+                <div class="mini-dot"></div>
+                <div class="mini-item-text"><strong>ITC Group</strong> — Management Trainee (1987–88)</div>
+              </div>
+              <div class="mini-item">
+                <div class="mini-dot"></div>
+                <div class="mini-item-text"><strong>Joined AIS</strong> — 1996</div>
+              </div>
+              <div class="mini-item">
+                <div class="mini-dot"></div>
+                <div class="mini-item-text"><strong>COO & CMO</strong> — Consumer Glass + AIS (2011–2026)</div>
+              </div>
+              <div class="mini-item highlight">
+                <div class="mini-dot"></div>
+                <div class="mini-item-text"><strong>PRESIDENT</strong> — AIS Consumer Glass Solutions LTD (2026)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================
+       SECTION 3: CAREER TIMELINE
+       =================================== -->
+  <section id="journey" aria-label="Career Journey">
+    <div class="container">
+      <div class="reveal" style="text-align:center; margin-bottom:0.5rem;">
+        <p class="section-label">The Complete Story</p>
+        <h2 class="display-lg">A Journey of Distinction</h2>
+      </div>
+
+      <div class="timeline-wrapper" aria-label="Career timeline">
+        <div class="timeline-items">
+
+          <!-- Item 1: ITC -->
+          <div class="timeline-item reveal delay-1">
+            <div class="tl-empty"></div>
+            <div class="tl-node">
+              <div class="tl-dot"></div>
+              <div class="tl-year">1987–88</div>
+            </div>
+            <div class="tl-content">
+              <div class="tl-role">Management Trainee</div>
+              <div class="tl-company">ITC Group of Hotels</div>
+              <div class="tl-desc">Began his professional journey with one of India's most prestigious conglomerates, laying the foundation of corporate discipline.</div>
+            </div>
+          </div>
+
+          <!-- Item 2: Army -->
+          <div class="timeline-item reveal delay-2">
+            <div class="tl-content">
+              <div class="tl-role">Second Generation Officer — Indian Artillery</div>
+              <div class="tl-company">Indian Army</div>
+              <div class="tl-desc">Seven formative years of military service as an Artillery Officer. Command, precision, and leadership under pressure — skills that would define every chapter to follow.</div>
+            </div>
+            <div class="tl-node">
+              <div class="tl-dot"></div>
+              <div class="tl-year">1988–1995</div>
+            </div>
+            <div class="tl-empty"></div>
+          </div>
+
+          <!-- Item 3: AIS Joins -->
+          <div class="timeline-item reveal delay-1">
+            <div class="tl-empty"></div>
+            <div class="tl-node">
+              <div class="tl-dot"></div>
+              <div class="tl-year">1996–2003</div>
+            </div>
+            <div class="tl-content">
+              <div class="tl-role">Joins Asahi India Glass Ltd. (AIS)</div>
+              <div class="tl-company">AIS — Sales Division</div>
+              <div class="tl-desc">A defining moment. Vikram joins AIS and embarks on a three-decade journey that will reshape the company's commercial and consumer glass landscape.</div>
+            </div>
+          </div>
+
+          <!-- Item 4: Sales & Marketing Head -->
+          <div class="timeline-item reveal delay-2">
+            <div class="tl-content">
+              <div class="tl-role">Sales & Marketing Head · Materials Head</div>
+              <div class="tl-company">AIS Auto Division</div>
+              <div class="tl-desc">Took charge of the automotive glass division's commercial operations, driving growth through strategic sales and supply chain mastery.</div>
+            </div>
+            <div class="tl-node">
+              <div class="tl-dot"></div>
+              <div class="tl-year">2004–2006</div>
+            </div>
+            <div class="tl-empty"></div>
+          </div>
+
+          <!-- Item 5: CIO / ED -->
+          <div class="timeline-item reveal delay-1">
+            <div class="tl-empty"></div>
+            <div class="tl-node">
+              <div class="tl-dot"></div>
+              <div class="tl-year">2006–2009</div>
+            </div>
+            <div class="tl-content">
+              <div class="tl-role">CIO · ED — Commercial</div>
+              <div class="tl-company">AIS Auto</div>
+              <div class="tl-desc">Elevated to executive director level with expanded commercial portfolio and information leadership responsibilities across the automotive vertical.</div>
+            </div>
+          </div>
+
+          <!-- Item 6: COO Auto Services -->
+          <div class="timeline-item reveal delay-2">
+            <div class="tl-content">
+              <div class="tl-role">COO · CIO — Auto Services</div>
+              <div class="tl-company">AIS Auto Services</div>
+              <div class="tl-desc">Drove operational excellence across the auto services division with end-to-end P&amp;L responsibility and customer service transformation.</div>
+            </div>
+            <div class="tl-node">
+              <div class="tl-dot"></div>
+              <div class="tl-year">2009–2011</div>
+            </div>
+            <div class="tl-empty"></div>
+          </div>
+
+          <!-- Item 7: COO Consumer Glass -->
+          <div class="timeline-item reveal delay-1">
+            <div class="tl-empty"></div>
+            <div class="tl-node">
+              <div class="tl-dot"></div>
+              <div class="tl-year">2011–2012</div>
+            </div>
+            <div class="tl-content">
+              <div class="tl-role">COO — AIS Consumer Glass</div>
+              <div class="tl-company">AIS Consumer Glass Division</div>
+              <div class="tl-desc">Assumed leadership of the consumer glass business, setting the stage for over a decade of transformational growth in both B2B and B2C markets.</div>
+            </div>
+          </div>
+
+          <!-- Item 8: COO Consumer + CMO AIS -->
+          <div class="timeline-item reveal delay-2">
+            <div class="tl-content">
+              <div class="tl-role">COO — Consumer Glass · CMO — AIS</div>
+              <div class="tl-company">AIS (Dual Portfolio)</div>
+              <div class="tl-desc">For 14+ years, simultaneously led Consumer Glass operations and AIS's enterprise-wide marketing function — architecting brand strategy, market expansion, and commercial performance at the highest level.</div>
+            </div>
+            <div class="tl-node">
+              <div class="tl-dot"></div>
+              <div class="tl-year">2012–2026</div>
+            </div>
+            <div class="tl-empty"></div>
+          </div>
+
+          <!-- Item 9: PRESIDENT — highlighted -->
+          <div class="timeline-item highlight reveal delay-1">
+            <div class="tl-empty"></div>
+            <div class="tl-node">
+              <div class="tl-dot"></div>
+              <div class="tl-year">2026 →</div>
+            </div>
+            <div class="tl-content">
+              <div class="tl-role">PRESIDENT</div>
+              <div class="tl-company">AIS Consumer Glass Solutions LTD</div>
+              <div class="tl-desc">The pinnacle of a 30-year journey. Appointed President of AIS Consumer Glass Solutions LTD — the ultimate recognition of three decades of leadership, vision, and dedication to the AIS mission.</div>
+              <div class="tl-president-badge">🏆 Apex Leadership — April 2026</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================
+       SECTION 4: EXPERTISE
+       =================================== -->
+  <section id="expertise" aria-label="Domain Expertise">
+    <div class="container">
+      <div class="reveal" style="text-align:center; margin-bottom:0.5rem;">
+        <p class="section-label">Skills & Competencies</p>
+        <h2 class="display-lg">Domain Mastery</h2>
+      </div>
+      <div class="expertise-grid">
+        <div class="expertise-card reveal-scale delay-1">
+          <span class="expertise-icon" aria-hidden="true">🎯</span>
+          <div class="expertise-title">Business Planning & Strategy</div>
+          <div class="expertise-desc">Long-range corporate planning, strategic market positioning, and growth roadmaps across B2B and B2C verticals.</div>
+        </div>
+        <div class="expertise-card reveal-scale delay-2">
+          <span class="expertise-icon" aria-hidden="true">📊</span>
+          <div class="expertise-title">P&L Ownership</div>
+          <div class="expertise-desc">Full profit and loss accountability across manufacturing, retail, and services — B2B and B2C alike.</div>
+        </div>
+        <div class="expertise-card reveal-scale delay-3">
+          <span class="expertise-icon" aria-hidden="true">🏭</span>
+          <div class="expertise-title">Manufacturing to Retail</div>
+          <div class="expertise-desc">End-to-end value chain expertise from plant-level operations to consumer retail, across the glass industry spectrum.</div>
+        </div>
+        <div class="expertise-card reveal-scale delay-4">
+          <span class="expertise-icon" aria-hidden="true">🚗</span>
+          <div class="expertise-title">Automotive Glass</div>
+          <div class="expertise-desc">Deep domain knowledge in automotive OEM and aftermarket glass — sales, service, and supply chain.</div>
+        </div>
+        <div class="expertise-card reveal-scale delay-1">
+          <span class="expertise-icon" aria-hidden="true">🏗️</span>
+          <div class="expertise-title">Architectural Glass</div>
+          <div class="expertise-desc">Comprehensive leadership of architectural glass business development, channel management, and institutional sales.</div>
+        </div>
+        <div class="expertise-card reveal-scale delay-2">
+          <span class="expertise-icon" aria-hidden="true">🏢</span>
+          <div class="expertise-title">Industrial Markets</div>
+          <div class="expertise-desc">Strategic development of industrial glass segments, including B2B key account management and technical sales.</div>
+        </div>
+        <div class="expertise-card reveal-scale delay-3">
+          <span class="expertise-icon" aria-hidden="true">🤝</span>
+          <div class="expertise-title">Alliance Building</div>
+          <div class="expertise-desc">Creating and nurturing strategic partnerships, JVs, and distributor alliances that multiply market reach.</div>
+        </div>
+        <div class="expertise-card reveal-scale delay-4">
+          <span class="expertise-icon" aria-hidden="true">👥</span>
+          <div class="expertise-title">Mentoring & People Development</div>
+          <div class="expertise-desc">Building high-performance teams and nurturing the next generation of business leaders within AIS.</div>
+        </div>
+        <div class="expertise-card reveal-scale delay-1">
+          <span class="expertise-icon" aria-hidden="true">📦</span>
+          <div class="expertise-title">Supply Chain Management</div>
+          <div class="expertise-desc">Lean, resilient supply chains designed for scale — from raw materials procurement to last-mile delivery.</div>
+        </div>
+        <div class="expertise-card reveal-scale delay-2">
+          <span class="expertise-icon" aria-hidden="true">💼</span>
+          <div class="expertise-title">Commercial Operations</div>
+          <div class="expertise-desc">Comprehensive commercial governance including pricing, contracts, compliance, and cross-functional collaboration.</div>
+        </div>
+        <div class="expertise-card reveal-scale delay-3">
+          <span class="expertise-icon" aria-hidden="true">🌍</span>
+          <div class="expertise-title">Pan India & International</div>
+          <div class="expertise-desc">National and international market experience spanning diverse geographies, cultures, and regulatory environments.</div>
+        </div>
+        <div class="expertise-card reveal-scale delay-4">
+          <span class="expertise-icon" aria-hidden="true">🎖️</span>
+          <div class="expertise-title">Military-Grade Leadership</div>
+          <div class="expertise-desc">Command presence, crisis management, and disciplined execution forged in the Indian Army's Artillery Corps.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================
+       SECTION 5: LEGACY & IMPACT
+       =================================== -->
+  <section id="legacy" aria-label="Legacy and Impact">
+    <div class="legacy-bg-text" aria-hidden="true">AIS</div>
+    <div class="container legacy-content">
+      <div class="reveal" style="text-align:center; margin-bottom:0.5rem;">
+        <p class="section-label">Impact & Contributions</p>
+        <h2 class="display-lg">Building an Empire in Glass</h2>
+      </div>
+
+      <div class="legacy-quote-block reveal delay-1" style="margin-top:2.5rem;">
+        <div class="legacy-quote-mark" aria-hidden="true">"</div>
+        <p class="legacy-quote-text">
+          Experienced Commercial and Operations Director with a demonstrated history of P&amp;L ownership of businesses — B2B and B2C, from manufacturing to retail segments of the glass industry for automotive, architectural and industrial markets.
+        </p>
+      </div>
+
+      <div class="legacy-blocks">
+        <div class="legacy-block reveal-scale delay-1">
+          <div class="legacy-block-number" aria-hidden="true">01</div>
+          <div class="legacy-block-title">The Strategist</div>
+          <div class="legacy-block-body">Marketing vision, supply chain precision, masterful negotiation, and integrated sales operations. Vikram approaches every business challenge with the calculated clarity of an artillery officer calling coordinates — deliberate, decisive, and devastatingly effective.</div>
+        </div>
+        <div class="legacy-block reveal-scale delay-2">
+          <div class="legacy-block-number" aria-hidden="true">02</div>
+          <div class="legacy-block-title">The Leader</div>
+          <div class="legacy-block-body">Building alliances that last decades, mentoring the next generation of glass industry leaders, and cultivating deep customer relationships built on trust. His leadership style is defined not by authority, but by the genuine respect he commands from every corner of the organisation.</div>
+        </div>
+        <div class="legacy-block reveal-scale delay-3">
+          <div class="legacy-block-number" aria-hidden="true">03</div>
+          <div class="legacy-block-title">The Visionary</div>
+          <div class="legacy-block-body">Thirty years of transforming AIS from within — anticipating markets before they emerged, building capabilities before they were needed, and steering the consumer glass business through every cycle of growth, disruption, and reinvention. That is the mark of a true visionary.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================
+       SECTION 6: WORDS OF GRATITUDE
+       =================================== -->
+  <section id="gratitude" aria-label="Words of Gratitude">
+    <div class="container">
+      <div class="gratitude-inner">
+        <span class="gratitude-icon reveal" aria-hidden="true">🌟</span>
+        <h2 class="gratitude-title reveal delay-1">A Personal Salute</h2>
+        <div class="gratitude-divider reveal delay-2" aria-hidden="true"></div>
+        <p class="gratitude-text reveal delay-2">
+          "A leader who inspires not by authority, but by example. Your journey from the artillery barracks to the boardroom is a testament to discipline, vision, and unwavering commitment. You have not merely served a company for thirty years — you have helped build it, soul by soul, market by market, year by year."
+        </p>
+        <p class="gratitude-text reveal delay-3" style="font-size: clamp(0.9rem, 2vw, 1.05rem); margin-top: -0.5rem;">
+          From Management Trainee to President — yours is a career that inspires not just admiration, but aspiration. The glass you have helped build, frame, and sell now reflects an empire that bears your fingerprints on every pane.
+        </p>
+        <p class="gratitude-signature reveal delay-4">— With deep respect and admiration</p>
+
+        <!-- Gratitude Cards -->
+        <div class="gratitude-cards">
+          <div class="gratitude-card reveal-scale delay-2">
+            <p class="gratitude-card-quote">"He leads with the calm authority of a man who has already faced the hardest tests — and passed them all. A true commander, in every sense."</p>
+            <div class="gratitude-card-author">— On your leadership</div>
+          </div>
+          <div class="gratitude-card reveal-scale delay-3">
+            <p class="gratitude-card-quote">"Thirty years of showing up, building up, and never giving up. This promotion isn't a milestone — it is the recognition of a lifetime of service."</p>
+            <div class="gratitude-card-author">— On your dedication</div>
+          </div>
+          <div class="gratitude-card reveal-scale delay-4">
+            <p class="gratitude-card-quote">"The soldier became a strategist. The strategist became a visionary. The visionary became President. We are proud to have witnessed every step."</p>
+            <div class="gratitude-card-author">— On your vision</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================
+       FOOTER
+       =================================== -->
+  <footer id="contact" aria-label="Footer">
+    <div class="footer-inner">
+      <!-- Gold Crest -->
+      <div class="footer-crest reveal" aria-label="Presidential crest">
+        <svg width="90" height="108" viewBox="0 0 90 108" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- Shield outline -->
+          <path d="M45 4L8 20V52C8 72 24 90 45 104C66 90 82 72 82 52V20L45 4Z" stroke="#c8a34a" stroke-width="2" fill="rgba(200,163,74,0.05)"/>
+          <!-- Inner shield border -->
+          <path d="M45 14L16 28V52C16 68 28 83 45 95C62 83 74 68 74 52V28L45 14Z" stroke="rgba(200,163,74,0.3)" stroke-width="1" fill="none"/>
+          <!-- Star (5-point) -->
+          <polygon points="45,28 47.8,37.6 57.8,37.6 50,43.4 52.8,53 45,47.2 37.2,53 40,43.4 32.2,37.6 42.2,37.6" fill="#c8a34a" opacity="0.9"/>
+          <!-- Artillery-inspired cross lines -->
+          <line x1="45" y1="56" x2="45" y2="72" stroke="#c8a34a" stroke-width="1.5" opacity="0.5"/>
+          <line x1="37" y1="64" x2="53" y2="64" stroke="#c8a34a" stroke-width="1.5" opacity="0.5"/>
+          <!-- Bottom text area line -->
+          <line x1="28" y1="80" x2="62" y2="80" stroke="rgba(200,163,74,0.3)" stroke-width="1"/>
+        </svg>
+      </div>
+
+      <div class="reveal delay-1">
+        <p style="font-size:0.7rem; font-weight:600; letter-spacing:0.25em; text-transform:uppercase; color:var(--gold); margin-bottom:0.75rem;">Congratulations</p>
+        <h2 class="footer-name">Vikram Khanna</h2>
+        <p class="footer-title">President — AIS Consumer Glass Solutions LTD</p>
+      </div>
+
+      <p class="footer-congrats reveal delay-2">
+    "Sir, you taught us that leadership isn't about the title — it's about the lives you touch along the way. This promotion is simply the world catching up to what those around you have known for thirty years."
+</p>
+
+      <div class="footer-separator reveal delay-2" aria-hidden="true"></div>
+
+      <p class="footer-tribute-text reveal delay-3">
+    From watching you rise to learning from your example — this is my way of saying thank you. Thirty years. One journey. Countless lives changed.
+
+</p>
+
+      <div class="footer-links reveal delay-4">
+        <a href="https://www.linkedin.com/in/vikram-khanna-7689999" class="footer-link-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+          LinkedIn Profile
+        </a>
+        <a href="https://www.aisglass.com" class="footer-link-btn" target="_blank" rel="noopener noreferrer" aria-label="AIS Glass Website">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/>
+          </svg>
+          AIS Glass
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 · A personal salute, with deep respect</p>
+    </div>
+  </footer>
+
+  <!-- ===================================
+       JAVASCRIPT
+       =================================== -->
+  <script>
+    // ─── Navbar scroll effect ───────────────────────────
+    const navbar = document.getElementById('navbar');
+    let lastScroll = 0;
+    window.addEventListener('scroll', () => {
+      const scroll = window.scrollY;
+      if (scroll > 60) navbar.classList.add('scrolled');
+      else navbar.classList.remove('scrolled');
+      lastScroll = scroll;
+      updateActiveNav();
+    }, { passive: true });
+
+    // ─── Active Nav Highlighting ─────────────────────────
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a, .mobile-nav a');
+    function updateActiveNav() {
+      const scrollY = window.scrollY + 100;
+      sections.forEach(sec => {
+        const top = sec.offsetTop;
+        const h = sec.offsetHeight;
+        if (scrollY >= top && scrollY < top + h) {
+          navLinks.forEach(l => {
+            l.classList.remove('active');
+            if (l.getAttribute('href') === '#' + sec.id) l.classList.add('active');
+          });
+        }
+      });
+    }
+
+    // ─── Hamburger Menu ──────────────────────────────────
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    let menuOpen = false;
+
+    function toggleMenu(open) {
+      menuOpen = open !== undefined ? open : !menuOpen;
+      hamburger.classList.toggle('open', menuOpen);
+      hamburger.setAttribute('aria-expanded', menuOpen);
+      mobileNav.style.display = 'block';
+      requestAnimationFrame(() => {
+        mobileNav.classList.toggle('open', menuOpen);
+      });
+      document.body.style.overflow = menuOpen ? 'hidden' : '';
+    }
+
+    hamburger.addEventListener('click', () => toggleMenu());
+
+    // Close on mobile nav link click
+    document.querySelectorAll('.mobile-nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        toggleMenu(false);
+        setTimeout(() => { mobileNav.style.display = ''; }, 350);
+      });
+    });
+
+    // Close on outside click
+    document.addEventListener('click', e => {
+      if (menuOpen && !navbar.contains(e.target) && !mobileNav.contains(e.target)) {
+        toggleMenu(false);
+        setTimeout(() => { mobileNav.style.display = ''; }, 350);
+      }
+    });
+
+    // ─── Gold Separator Animate ──────────────────────────
+    setTimeout(() => {
+      const sep = document.getElementById('goldSep');
+      if (sep) sep.classList.add('animate');
+    }, 600);
+
+    // ─── Scroll Reveal (Intersection Observer) ───────────
+    const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(el => revealObserver.observe(el));
+
+    // ─── Stats Counter Animation ─────────────────────────
+    const counters = document.querySelectorAll('.stat-number[data-count]');
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const target = parseInt(el.dataset.count);
+          const suffix = el.dataset.suffix || '';
+          const duration = 1800;
+          const start = performance.now();
+          const animate = (now) => {
+            const elapsed = now - start;
+            const progress = Math.min(elapsed / duration, 1);
+            const eased = 1 - Math.pow(1 - progress, 3);
+            el.textContent = Math.floor(eased * target) + suffix;
+            if (progress < 1) requestAnimationFrame(animate);
+            else el.textContent = target + suffix;
+          };
+          requestAnimationFrame(animate);
+          counterObserver.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(c => counterObserver.observe(c));
+
+    // ─── Smooth scroll for all anchor links ──────────────
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', e => {
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          const navH = navbar.offsetHeight;
+          const top = target.getBoundingClientRect().top + window.scrollY - navH - 10;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      });
+    });
+
+    // ─── Image fallback ──────────────────────────────────
+    const img = document.getElementById('profileImg');
+    if (img && img.complete && img.naturalWidth === 0) {
+      img.style.display = 'none';
+      document.getElementById('profileFallback').style.display = 'flex';
+    }
+
+    // ─── Timeline reveal stagger ─────────────────────────
+    const tlItems = document.querySelectorAll('.timeline-item');
+    const tlObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          tlObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -30px 0px' });
+    tlItems.forEach(item => tlObserver.observe(item));
+
+    // ─── Prefers-reduced-motion: disable animations ───────
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale, .timeline-item').forEach(el => {
+        el.classList.add('revealed');
+      });
+      document.querySelectorAll('[style*="animation"]').forEach(el => {
+        el.style.animation = 'none';
+      });
+    }
+  </script>
+</body>
+</html>
